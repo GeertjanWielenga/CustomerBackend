@@ -62,7 +62,7 @@ public class CustomerFacadeREST extends AbstractFacade<Customer> {
 
     @GET
     @Override
-    @Produces({"application/xml", "application/json"})
+    @Produces({"application/json"})
     public List<Customer> findAll() {
         return super.findAll();
     }
@@ -85,5 +85,5 @@ public class CustomerFacadeREST extends AbstractFacade<Customer> {
     protected EntityManager getEntityManager() {
         return em;
     }
-    
+
 }
